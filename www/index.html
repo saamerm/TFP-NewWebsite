@@ -732,7 +732,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
                             Latest Article
                             
-                            <a href="blog1.html" class="section-more right">All Articles <i class="fa fa-angle-right"></i></a>
+                            <a id="launch_blog" href="blog1.html" class="section-more right">All Articles <i class="fa fa-angle-right"></i></a>
                             
                         </h2>
                         
@@ -750,7 +750,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 </div>
                                 
                                 <div class="post-prev-info font-alt">
-                                    <a href="">Saamer Mansoor</a> | Febuary 26, 2021
+                                    <a href="https://twitter.com/saamerm">Saamer Mansoor</a> | Febuary 26, 2021
                                 </div>
                                 
                                 <div class="post-prev-text">
@@ -777,7 +777,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 </div>
                                 
                                 <div class="post-prev-info font-alt">
-                                    <a href="">Saamer Mansoor</a> | January 9, 2021
+                                    <a href="https://twitter.com/saamerm">Saamer Mansoor</a> | January 9, 2021
                                 </div>
                                 
                                 <div class="post-prev-text">
@@ -803,7 +803,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 </div>
                                 
                                 <div class="post-prev-info font-alt">
-                                    <a href="">Saamer Mansoor</a> | December 8, 2020
+                                    <a href="https://twitter.com/saamerm">Saamer Mansoor</a> | December 8, 2020
                                 </div>
                                 
                                 <div class="post-prev-text">
@@ -827,7 +827,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                 <section class="small-section bg-gray-lighter">
                     <div class="container relative">
                         
-                        <form class="form align-center" id="mailchimp">
+                        <div class="form align-center">
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
                                     
@@ -836,22 +836,19 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                     </div>
                                     
                                     <div class="mb-20">
-                                        <input placeholder="Enter Your Email" class="newsletter-field form-control input-md round mb-xs-10" type="email" pattern=".{5,100}" required aria-required="true">
+                                        <input placeholder="Enter Your Email" id="subscription_message" class="newsletter-field form-control input-md round mb-xs-10" type="email" >
                                         
-                                        <button type="submit" aria-controls="subscribe-result" class="btn btn-mod btn-medium btn-round mb-xs-10">
-                                            Subscribe
-                                        </button>
+                                        <input id="subscribe_user" type="submit" class="btn btn-mod btn-medium btn-round mb-xs-10" aria-controls="result" value="SUBSCRIBE" >
                                     </div>
                                     
                                     <div class="form-tip">
-                                        <i class="fa fa-info-circle"></i> Please trust us, we will never send you spam
+                                        <i class="fa fa-info-circle"></i> You can trust us, we will never send you spam
                                     </div>
                                     
-                                    <div id="subscribe-result" role="region" aria-live="polite" aria-atomic="true"></div>
-                                    
+                                    <div id="subscription_reponse" role="region" aria-live="polite" aria-atomic="true"></div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                         
                     </div>
                 </section>
@@ -932,19 +929,19 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2">
                                 
-                                <form class="form contact-form" id="contact_form">
+                                <!-- <form class="form contact-form" id="contact_form"> -->
                                     <div class="clearfix">
                                         
                                         <div class="cf-left-col">
                                             
                                             <!-- Name -->
                                             <div class="form-group">
-                                                <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Name" pattern=".{3,100}" required aria-required="true">
+                                                <input id="contact_name" class="input-md round form-control" type="text" placeholder="NAME">
                                             </div>
                                             
                                             <!-- Email -->
                                             <div class="form-group">
-                                                <input type="email" name="email" id="email" class="input-md round form-control" placeholder="Email" pattern=".{5,100}" required aria-required="true">
+                                                <input id="contact_email" class="input-md round form-control" type="text" placeholder="EMAIL">
                                             </div>
                                             
                                         </div>
@@ -953,7 +950,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                             
                                             <!-- Message -->
                                             <div class="form-group">                                            
-                                                <textarea name="message" id="message" class="input-md round form-control" style="height: 84px;" placeholder="Message"></textarea>
+                                                <textarea id="contact_message" class="input-md round form-control" placeholder= "MESSAGE" style="height: 84px;" ></textarea>
                                             </div>
                                             
                                         </div>
@@ -975,17 +972,15 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                             
                                             <!-- Send Button -->
                                             <div class="align-right pt-10">
-                                                <button class="submit_btn btn btn-mod btn-medium btn-round" id="submit_btn" aria-controls="result">Submit Message</button>
+                                                <input id="send_message" type="submit" class="submit_btn btn btn-mod btn-medium btn-round" aria-controls="result" value="SUBMIT MESSAGE" >
                                             </div>
                                             
                                         </div>
                                         
                                     </div>
-                                    
-                                    
-                                    
-                                    <div id="result" role="region" aria-live="polite" aria-atomic="true"></div>
-                                </form>
+                                                                        
+                                    <div id="form_response" role="region" aria-live="polite" aria-atomic="true"></div>
+                                <!-- </form> -->
                                 
                             </div>
                         </div>
@@ -1010,11 +1005,11 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                     
                     <!-- Social Links -->
                     <div class="footer-social-links mb-110 mb-xs-60">
-                        <a href="https://www.facebook.com/prototypemakers" title="Facebook" target="Facebook"><i class="fa fa-facebook"></i> <span class="sr-only">Facebook profile</span></a>
-                        <a href="https://twitter.com/prototypemakers" title="Twitter" target="Twitter"><i class="fa fa-twitter"></i> <span class="sr-only">Twitter profile</span></a>
-                        <a href="https://www.linkedin.com/company/10621304/" title="LinkedIn" target="LinkedIn"><i class="fa fa-linkedin"></i> <span class="sr-only">LinkedIn+ profile</span></a>
-                        <a href="https://www.instagram.com/prototypemakers/" title="Instagram" target="Instagram"><i class="fa fa-instagram"></i> <span class="sr-only">Instagram</span></a>
-                        <a href="https://www.youtube.com/channel/UCgiZLb7cRDGsxOsGf8peXjw" title="Youtube" target="Youtube"><i class="fa fa-youtube"></i> <span class="sr-only">Youtube</span></a>
+                        <a id="launch_facebook" href="https://www.facebook.com/prototypemakers" title="Facebook" target="Facebook"><i class="fa fa-facebook"></i> <span class="sr-only">Facebook profile</span></a>
+                        <a id="launch_twitter" href="https://twitter.com/prototypemakers" title="Twitter" target="Twitter"><i class="fa fa-twitter"></i> <span class="sr-only">Twitter profile</span></a>
+                        <a id="launch_linkedin" href="https://www.linkedin.com/company/10621304/" title="LinkedIn" target="LinkedIn"><i class="fa fa-linkedin"></i> <span class="sr-only">LinkedIn+ profile</span></a>
+                        <a id="launch_instagram" href="https://www.instagram.com/prototypemakers/" title="Instagram" target="Instagram"><i class="fa fa-instagram"></i> <span class="sr-only">Instagram</span></a>
+                        <a id="launch_youtube" href="https://www.youtube.com/channel/UCgiZLb7cRDGsxOsGf8peXjw" title="Youtube" target="Youtube"><i class="fa fa-youtube"></i> <span class="sr-only">Youtube</span></a>
                     </div>
                     <!-- End Social Links -->
                     
@@ -1028,7 +1023,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         <!-- End Copyright -->
                         
                         <div class="footer-made">
-                            Made with love for great people.
+                            Made with love for great people to visit.
                         </div>
                         
                     </div>

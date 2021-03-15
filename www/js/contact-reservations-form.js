@@ -35,23 +35,23 @@ $(document).ready(function(){
             };
             
             //Ajax post data to server
-            $.post('contact_reservations.php', post_data, function(response){
+            // $.post('contact_reservations.php', post_data, function(response){
             
-                //load json data from server and output message     
-                if (response.type == 'error') {
-                    output = '<div class="error">' + response.text + '</div>';
-                }
-                else {
+            //     //load json data from server and output message     
+            //     if (response.type == 'error') {
+            //         output = '<div class="error">' + response.text + '</div>';
+            //     }
+            //     else {
                 
-                    output = '<div class="success">' + response.text + '</div>';
+            //         output = '<div class="success">' + response.text + '</div>';
                     
-                    //reset values in all input fields
-                    $('#contact_form input').val('');
-                    $('#contact_form textarea').val('');
-                }
+            //         //reset values in all input fields
+            //         $('#contact_form input').val('');
+            //         $('#contact_form textarea').val('');
+            //     }
                 
-                $("#result").hide().html(output).slideDown();
-            }, 'json');
+            //     $("#result").hide().html(output).slideDown();
+            // }, 'json');
             
         }
         
