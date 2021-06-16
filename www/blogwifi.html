@@ -57,10 +57,33 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                 </div>
             </nav>
             <!-- End Navigation panel -->
-                
-                <!-- Divider -->
-                <hr class="mt-0 mb-0"/>
-                <!-- End Divider -->
+            
+            <main id="main">
+            
+                <!-- Head Section -->
+                <section class="small-section bg-gray-lighter">
+                    <div class="relative container align-left">
+                        
+                        <div class="row">
+                            
+                            <div class="col-md-8">
+                                <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Blog Section</h1>
+                                <div class="hs-line-4 font-alt black">
+                                    We share our best ideas in our blog
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mt-30">
+                                <div class="mod-breadcrumbs font-alt align-right">
+                                    <a href="index.html">Home</a>&nbsp;/&nbsp;<a href="blog1.html">Blog</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <!-- End Head Section -->
                 
                 
                 <!-- Section -->
@@ -75,30 +98,27 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 <!-- Post -->
                                 <div class="blog-item mb-80 mb-xs-40">
                                     
-                                    <div class="relative reader__grid">
-      <header id="reader-article-header" aria-label="Newsletter header">
-<!---->        <h1 dir="ltr" class="reader-article-header__title t-40 t-black t-normal pv4">
-          WiFi Build and Debug with Android 11 on Xamarin, Flutter &amp; React Native
-        </h1>
-        <ul class="reader-article-header__meta t-14 t-black--light t-normal mv4">
-        
-<!----><!---->        </ul>
-      </header>
+                                    <!-- Text -->
+        							<div class="blog-item-body">
+        							    
+                                        <h1 class="mt-0 font-alt">WiFi Build and Debug with Android 11 on Xamarin, Flutter & React Native
+</h1>
+                                
+        							 
+                                        <!-- End Text -->   
+                                        
+                                        <!-- Media Gallery -->
+                                        
+        								
+                                        <div id="ember55" class="ember-view"><div dir="ltr" class="reader-article-content"><h2>No more cables on your&nbsp;tables</h2><p>Wireless build and debug for Android is a feature cross-platform mobile developers have been waiting for years, especially since <a href="https://help.apple.com/xcode/mac/9.0/index.html" target="_blank" rel="nofollow noopener">iOS enabled wireless debugging</a>&nbsp;years ago. From Android 11 onwards, the process&nbsp;<a href="https://android-developers.googleblog.com/2020/04/android-11-developer-preview-3.html" target="_blank" rel="nofollow noopener">has been simplified</a>&nbsp;and you can finally get rid of wired build and debugging!</p><p>There’s a few steps involved, but luckily you just have to do it once per wireless connection, and you’re good across all your apps. If you are already using Android SDK 30, you should be fine. Or else you need to install <a href="https://developer.android.com/studio/releases/platforms" target="_blank" rel="nofollow noopener">SDK 30</a> on your computer&nbsp;.</p><div class="slate-resizable-image-embed slate-image-embed__resize-full-width"><img alt="Android device setup steps to follow, as detailed below" data-media-urn="" data-li-src="https://media-exp3.licdn.com/dms/image/C5612AQHYi7IrdEolTg/article-inline_image-shrink_1500_2232/0/1614894768986?e=1629331200&amp;v=beta&amp;t=Latl3QXpjsvnxreEC_2aEdtkDP9lf_eroIfUi8B4tn4" src="https://media-exp3.licdn.com/dms/image/C5612AQHYi7IrdEolTg/article-inline_image-shrink_1500_2232/0/1614894768986?e=1629331200&amp;v=beta&amp;t=Latl3QXpjsvnxreEC_2aEdtkDP9lf_eroIfUi8B4tn4"></div><h2>Steps to Wireless Build and Debugging with&nbsp;Android</h2><ol><li>On your Android 11 device, go to your Settings -&gt; Tap on Advanced and go to the Developer options.</li><li>Then tap on Wireless Debugging switch, and always allow wireless debugging for your personal wireless network in the popup dialog</li><li>Then tap on the Wireless Debugging option and select “Pair device with pairing code” and it will give you a 6 digit code and IP address as you can see in the image</li><li>Type the IP address and port from your phone in the "Pair with device" pop-up screen above into your computer terminal: "adb pair {ipaddress}:{port}". Xamarin devs can access adb inside Visual Studio -&gt; Tools -&gt; SDK Command Prompt </li><li>Then take the IP Address and port from the last screen and enter the following command&nbsp;"adb connect {ipaddress}:{port}".</li></ol><div class="slate-resizable-image-embed slate-image-embed__resize-full-width"><img alt="Steps to follow on your computer to pair the device as mentioned above" data-media-urn="" data-li-src="https://media-exp3.licdn.com/dms/image/C5612AQHFAWkFrW_WxA/article-inline_image-shrink_1000_1488/0/1614894819473?e=1629331200&amp;v=beta&amp;t=UyCSiJPtznZc9cwlyEozpGd6BPEy5lJ0XIzVJG4lc6I" src="https://media-exp3.licdn.com/dms/image/C5612AQHFAWkFrW_WxA/article-inline_image-shrink_1000_1488/0/1614894819473?e=1629331200&amp;v=beta&amp;t=UyCSiJPtznZc9cwlyEozpGd6BPEy5lJ0XIzVJG4lc6I"></div><p>Voilà, say goodbye to your Android cables, while selecting the same device from the same drop down that you have always used. While figuring this out, my heart skipped a beat while I took out the wire from my Mac. Goodbye weak cable that stopped debugging if I tilted the phone too much, I will not miss you.</p><h3>Final Thoughts</h3><p>As you will notice, the difference between iOS &amp; Android wireless debugging is that iOS requires you to configure your device for each app, where as Android requires you to configure your device for each wireless network. If you’re using Android 10 or below, you can try to follow&nbsp;<a href="https://www.andrewhoefling.com/Blog/Post/android-wi-fi-debugging-with-adb-android-device-bridge-and-xamarin-visual-studio" target="_blank" rel="nofollow noopener">this tutorial</a>. If you have any questions, feel free to&nbsp;<a href="https://www.twitter.com/saamerm" target="_blank" rel="nofollow noopener">message me</a>&nbsp;and don’t forget to check out my&nbsp;<a href="https://prototypemakers.medium.com/" target="_blank" rel="nofollow noopener">other articles</a>. Special thank you to&nbsp;<a href="https://twitter.com/pujolsluis1" target="_blank" rel="nofollow noopener">Luis Pujols</a>&nbsp;and&nbsp;<a href="https://twitter.com/dylbot9000" target="_blank" rel="nofollow noopener">Dylan Berry</a>&nbsp;for critiquing my articles!</p></div>
 
-      <div class="reader-author-info__container-wrapper">
-        <div class="reader-author-info__container reader-author-info__container--reactions-enable">
-          <div id="ember44" class="display-flex align-items-center justify-space-between flex-wrap ember-view"><div id="ember45" class="artdeco-entity-lockup artdeco-entity-lockup--size-4 ember-view">
-  <div id="ember46" class="artdeco-entity-lockup__image artdeco-entity-lockup__image--type-circle ember-view" type="circle">
-<a data-control-name="read_profile" href="/in/saamer/" id="ember47" class="reader-author-info__meta-image ember-view">      <div class="feed-shared-avatar-image b0 member ml2">
-    <div class="presence-entity presence-entity--size-4">
-  <img src="https://media-exp3.licdn.com/dms/image/C5103AQEa7g6vi4veig/profile-displayphoto-shrink_100_100/0/1541209813135?e=1628726400&amp;v=beta&amp;t=WOtrHxJ9ubPcqaKHFwtD12sf2mmToQJ3rRtat84Psm4" loading="lazy" alt="Saamer Mansoor" id="ember48" class="presence-entity__image  avatar member EntityPhoto-circle-4 EntityPhoto-circle-4 lazy-image ember-view">
-
-
-</div>
-</div>
-</a>  
-</div>
-  <div id="ember49" class="reader-author-info__content artdeco-entity-lockup__content ember-view">
+<!---->
+<iframe id="reader-article-content__chartbeat-iframe" class="reader-article-content__chartbeat-iframe"></iframe></div>
+                                        
+                                        
+        							</div>
+                                    <!-- End Text -->
+                                    <div id="ember49" class="reader-author-info__content artdeco-entity-lockup__content ember-view">
     <div id="ember50" class="reader-author-info__author-lockup--flex artdeco-entity-lockup__title ember-view">
        <h2>
           Saamer Mansoor
@@ -114,64 +134,11 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
             </time>
     </div>
   </div>
-
-</div>
-
-<!---->
-      <div id="ember56" class="ember-view"><div dir="ltr" class="reader-article-content"><h2>No more cables on your&nbsp;tables</h2><p>Wireless build and debug for Android is a feature cross-platform mobile developers have been waiting for years, especially since <a href="https://help.apple.com/xcode/mac/9.0/index.html" target="_blank" rel="nofollow noopener">iOS enabled wireless debugging</a>&nbsp;years ago. From Android 11 onwards, the process&nbsp;<a href="https://android-developers.googleblog.com/2020/04/android-11-developer-preview-3.html" target="_blank" rel="nofollow noopener">has been simplified</a>&nbsp;and you can finally get rid of wired build and debugging!</p><p>There’s a few steps involved, but luckily you just have to do it once per wireless connection, and you’re good across all your apps. If you are already using Android SDK 30, you should be fine. Or else you need to install <a href="https://developer.android.com/studio/releases/platforms" target="_blank" rel="nofollow noopener">SDK 30</a> on your computer&nbsp;.</p><div class="slate-resizable-image-embed slate-image-embed__resize-full-width"><img alt="Android device setup steps to follow, as detailed below" data-media-urn="" data-li-src="https://media-exp3.licdn.com/dms/image/C5612AQHYi7IrdEolTg/article-inline_image-shrink_1500_2232/0/1614894768986?e=1628726400&amp;v=beta&amp;t=PoFaPQQ6Yg5M7KP6mFdvlG5umyL5ZapyycYAJxjimx0" src="https://media-exp3.licdn.com/dms/image/C5612AQHYi7IrdEolTg/article-inline_image-shrink_1500_2232/0/1614894768986?e=1628726400&amp;v=beta&amp;t=PoFaPQQ6Yg5M7KP6mFdvlG5umyL5ZapyycYAJxjimx0"></div><h2>Steps to Wireless Build and Debugging with&nbsp;Android</h2><ol><li>On your Android 11 device, go to your Settings -&gt; Tap on Advanced and go to the Developer options.</li><li>Then tap on Wireless Debugging switch, and always allow wireless debugging for your personal wireless network in the popup dialog</li><li>Then tap on the Wireless Debugging option and select “Pair device with pairing code” and it will give you a 6 digit code and IP address as you can see in the image</li><li>Type the IP address and port from your phone in the "Pair with device" pop-up screen above into your computer terminal: "adb pair {ipaddress}:{port}". Xamarin devs can access adb inside Visual Studio -&gt; Tools -&gt; SDK Command Prompt </li><li>Then take the IP Address and port from the last screen and enter the following command&nbsp;"adb connect {ipaddress}:{port}".</li></ol><div class="slate-resizable-image-embed slate-image-embed__resize-full-width"><img alt="Steps to follow on your computer to pair the device as mentioned above" data-media-urn="" data-li-src="https://media-exp3.licdn.com/dms/image/C5612AQHFAWkFrW_WxA/article-inline_image-shrink_1000_1488/0/1614894819473?e=1628726400&amp;v=beta&amp;t=lFK7ST2TWm8YPnv-nh6IZhzW9NJVgRBfZ02SnUOgKxo" src="https://media-exp3.licdn.com/dms/image/C5612AQHFAWkFrW_WxA/article-inline_image-shrink_1000_1488/0/1614894819473?e=1628726400&amp;v=beta&amp;t=lFK7ST2TWm8YPnv-nh6IZhzW9NJVgRBfZ02SnUOgKxo"></div><p>Voilà, say goodbye to your Android cables, while selecting the same device from the same drop down that you have always used. While figuring this out, my heart skipped a beat while I took out the wire from my Mac. Goodbye weak cable that stopped debugging if I tilted the phone too much, I will not miss you.</p><h3>Final Thoughts</h3><p>As you will notice, the difference between iOS &amp; Android wireless debugging is that iOS requires you to configure your device for each app, where as Android requires you to configure your device for each wireless network. If you’re using Android 10 or below, you can try to follow&nbsp;<a href="https://www.andrewhoefling.com/Blog/Post/android-wi-fi-debugging-with-adb-android-device-bridge-and-xamarin-visual-studio" target="_blank" rel="nofollow noopener">this tutorial</a>. If you have any questions, feel free to&nbsp;<a href="https://www.twitter.com/saamerm" target="_blank" rel="nofollow noopener">message me</a>&nbsp;and don’t forget to check out my&nbsp;<a href="https://prototypemakers.medium.com/" target="_blank" rel="nofollow noopener">other articles</a>. Special thank you to&nbsp;<a href="https://twitter.com/pujolsluis1" target="_blank" rel="nofollow noopener">Luis Pujols</a>&nbsp;and&nbsp;<a href="https://twitter.com/dylbot9000" target="_blank" rel="nofollow noopener">Dylan Berry</a>&nbsp;for critiquing my articles!</p></div>
-
-<!---->
-<iframe id="reader-article-content__chartbeat-iframe" class="reader-article-content__chartbeat-iframe"></iframe></div>
-
-
-<!---->
-        <div class="reader-ugc-post-bar reader-ugc-post-bar--expanded">
-  <h3 class="mb2 t-sans t-16 t-black">
-    Published by
-  </h3>
-  <div class="display-flex justify-space-between">
-    <div id="ember70" class="display-flex align-items-center artdeco-entity-lockup artdeco-entity-lockup--size-3 ember-view">
-        <div id="ember71" class="artdeco-entity-lockup__image artdeco-entity-lockup__image--type-circle ember-view" type="circle">
-          <a href="/in/saamer/" id="ember72" class="ember-view">
-            <div id="ember73" class="ivm-image-view-model ember-view">  <div class="
-    ivm-view-attr__img-wrapper ivm-view-attr__img-wrapper--use-img-tag display-flex
-    
-  ">
-<!---->      <div class="presence-entity presence-entity--size-3">
-  <img src="https://media-exp3.licdn.com/dms/image/C5103AQEa7g6vi4veig/profile-displayphoto-shrink_100_100/0/1541209813135?e=1628726400&amp;v=beta&amp;t=WOtrHxJ9ubPcqaKHFwtD12sf2mmToQJ3rRtat84Psm4" loading="lazy" alt="Saamer Mansoor" id="ember164" class="presence-entity__image  ivm-view-attr__img--centered EntityPhoto-circle-3  EntityPhoto-circle-3 lazy-image ember-view">
-
-
-
-</div>
-</div>
-
-</div>
-          </a>
-        
-</div>
-      <div id="ember75" class="display-flex flex-column artdeco-entity-lockup__content ember-view">
-        <div id="ember76" class="artdeco-entity-lockup__title ember-view">
-            <a href="/in/saamer/" id="ember77" class="ember-view hoverable-link-text link-without-visited-state t-black t-14">
-              <span dir="ltr">Saamer Mansoor</span>
-            </a>
-        
-</div>
-        <div id="ember78" class="artdeco-entity-lockup__subtitle ember-view">
-            <div id="ember79" class="reader-ugc-post-bar__headline t-black--light t-12 feed-shared-text-view white-space-pre-wrap break-words ember-view"><span>Founder, Mobile Engineering Lead Consultant at The First Prototype | G20 Canadian YEA Delegate</span><!----></div>
-        </div>
-        <div id="ember81" class="artdeco-entity-lockup__metadata ember-view">
-            <span>
-              Published • 3mo
-            </span>
-        </div>
-      </div>
-    
-</div>
-
-<!----></section>
-      </footer>
-    </div>
         							
+        						</div>
+        						<!-- End Post -->
+    						
+        						
                             
                         </div>
                         
@@ -265,3 +232,4 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         
     </body>
 </html>
+
